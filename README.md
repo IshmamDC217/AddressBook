@@ -1,5 +1,4 @@
-# Getting Started with Address Book App
-## Available Scripts
+# Address Book App
 
 Instructions:
 
