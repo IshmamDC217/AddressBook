@@ -1,10 +1,28 @@
-import './App.css'
+import React from 'react';
+import './App.css';
+import {Routes, Route, Navigate} from 'react-router-dom';
+import NavigationBar from './components/NavigationBar/NavigationBar';
+import AddressList from './components/addresses/AddressList/AddressList';
+import AddAddress from './components/addresses/AddAddress/AddAddress';
+import ViewAddress from './components/addresses/ViewAddress/ViewAddress';
+import EditAddress from './components/addresses/EditAddress/EditAddress';
 
-function App() {
+let App = () => {
   return (
-    <div className= 'container'> 
-      <h1>Address Book App</h1>
-    </div>
-  )
+    <React.Fragment> 
+      <NavigationBar/>
+      <Routes>
+        <Route path={'/'} element={<Navigate to={'/addresses/list'}/>}/>
+        <Route path={'/addresses/list'} element={<AddressList/>}/>
+        <Route path={'/addresses/add'} element={<AddAddress/>}/>
+        <Route path={'/addresses/view/:contactId'} element={<ViewAddress/>}/>
+        <Route path={'/addresses/edit/:contactId'} element={<EditAddress/>}/>
+      </Routes>
+    </React.Fragment>
+  );
 } 
-export default App
+export default App;
+
+      /*{/* <button className= "btn btn-success me-2">
+        <i className= "fa fa-home me-2"/>hello</button>
+      <button className= "btn btn-success me-2">hello</button> */ /*}*/
