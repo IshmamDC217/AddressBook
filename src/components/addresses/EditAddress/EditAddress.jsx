@@ -39,7 +39,7 @@ let EditAddress = () => {
                             </form>
                         </div>
                         <div className="col-md-6">
-                            <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="" className="address-img"/>
+                            <img src="https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png" alt="" className="address-img"/>
                         </div>
                     </div>
                 </div>

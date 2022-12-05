@@ -79,6 +79,44 @@ let AddressList = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="col-md-6">
+                            <div className="card">
+                                <div className="card-body">
+                                    <div className="row align-items-center j-flex justify-content-around">
+                                        <div className="col-md-4">
+                                            <img src="https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png" alt="" className= "address-img"/>
+                                        </div>
+                                        <div className="col-md-7">
+                                            <ul className="list-group">
+                                                <li className="list-group-item list-group-item-action">
+                                                    First Name : <span className="fw-bolder">Tom</span>
+                                                </li>
+                                                <li className="list-group-item list-group-item-action">
+                                                    Last Name : <span className="fw-bolder">Holland</span>
+                                                </li>
+                                                <li className="list-group-item list-group-item-action">
+                                                    Mobile : <span className="fw-bolder">+8801738107100</span>
+                                                </li>
+                                                <li className="list-group-item list-group-item-action">
+                                                    Email : <span className="fw-bolder">tomhollandisspiderman@gmail.com</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="col-md-1 d-flex flex-column align-items-center">
+                                            <Link to={'/addresses/view/addressID'}className="btn btn-primary my-1">
+                                                <i className="fa fa-eye"/>
+                                            </Link>
+                                            <Link to={'/addresses/edit/addressID'}className="btn btn-warning my-1">
+                                                <i className="fa fa-pen"/>
+                                            </Link>
+                                            <button className="btn btn-danger my-1">
+                                                <i className="fa fa-trash"/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>    
                 </div>
             </section>
