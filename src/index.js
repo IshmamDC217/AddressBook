@@ -11,6 +11,7 @@ import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 /* Bootstrap 5.1.5 */
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
+// import '../node_modules/tailwind/dist/js/tailwind.bundle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

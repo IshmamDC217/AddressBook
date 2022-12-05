@@ -89,16 +89,16 @@ let AddressList = () => {
                                         <div className="col-md-7">
                                             <ul className="list-group">
                                                 <li className="list-group-item list-group-item-action">
-                                                    First Name : <span className="fw-bolder">Tom</span>
+                                                    First Name : <span className="fw-bolder">Bruce</span>
                                                 </li>
                                                 <li className="list-group-item list-group-item-action">
-                                                    Last Name : <span className="fw-bolder">Holland</span>
+                                                    Last Name : <span className="fw-bolder">Wayne</span>
                                                 </li>
                                                 <li className="list-group-item list-group-item-action">
-                                                    Mobile : <span className="fw-bolder">+8801738107100</span>
+                                                    Mobile : <span className="fw-bolder">+8801838109100</span>
                                                 </li>
                                                 <li className="list-group-item list-group-item-action">
-                                                    Email : <span className="fw-bolder">tomhollandisspiderman@gmail.com</span>
+                                                    Email : <span className="fw-bolder">brucewayneisbatman@gmail.com</span>
                                                 </li>
                                             </ul>
                                         </div>
