@@ -1,6 +1,6 @@
 # Address Book App
 
-Instructions:
+### Instructions:
 
 In the project directory, you can run:
 
