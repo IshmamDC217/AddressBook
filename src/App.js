@@ -15,8 +15,8 @@ let App = () => {
         <Route path={'/'} element={<Navigate to={'/addresses/list'}/>}/>
         <Route path={'/addresses/list'} element={<AddressList/>}/>
         <Route path={'/addresses/add'} element={<AddAddress/>}/>
-        <Route path={'/addresses/view/:contactId'} element={<ViewAddress/>}/>
-        <Route path={'/addresses/edit/:contactId'} element={<EditAddress/>}/>
+        <Route path={'/addresses/view/:addressId'} element={<ViewAddress/>}/>
+        <Route path={'/addresses/edit/:addressId'} element={<EditAddress/>}/>
       </Routes>
     </React.Fragment>
   );

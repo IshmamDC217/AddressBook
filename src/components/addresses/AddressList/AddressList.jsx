@@ -9,13 +9,13 @@ let AddressList = () => {
                     <div className= "grid">
                         <div className= "row">
                             <div className= "col">
-                                <p className= "h3">Address Manager 
+                                <p className= "h3 fw-bold">Address Manager 
                                 <Link to={'/addresses/add'}className="btn btn-success ms-2">
                                     <i className="fa fa-plus me-2"/>
                                     New</Link>
 
                                 </p>
-                                <p className= "fst-lighter">Addresses of Clients</p>
+                                <p className= "fst-lighter">Search for Addresses</p>
                             </div>                             
                         </div>
                         <div className="row">
@@ -44,12 +44,12 @@ let AddressList = () => {
                         <div className="col-md-6">
                             <div className="card">
                                 <div className="card-body">
-                                    <div className="row align-items-center">
+                                    <div className="row align-items-center j-flex justify-content-around">
                                         <div className="col-md-4">
                                             <img src="https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png" alt="" className= "address-img"/>
                                         </div>
                                         <div className="col-md-7">
-                                            <ul className="list group">
+                                            <ul className="list-group">
                                                 <li className="list-group-item list-group-item-action">
                                                     First Name : <span className="fw-bolder">Tom</span>
                                                 </li>
@@ -64,8 +64,16 @@ let AddressList = () => {
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div className="col-md-1">
-
+                                        <div className="col-md-1 d-flex flex-column align-items-center">
+                                            <Link to={'/addresses/view/addressID'}className="btn btn-primary my-1">
+                                                <i className="fa fa-eye"/>
+                                            </Link>
+                                            <Link to={'/addresses/edit/addressID'}className="btn btn-warning my-1">
+                                                <i className="fa fa-pen"/>
+                                            </Link>
+                                            <button className="btn btn-danger my-1">
+                                                <i className="fa fa-trash"/>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
