@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 let AddAddress = () => {
     return (
@@ -21,25 +22,19 @@ let AddAddress = () => {
                                     <input type="text" className="form-control" placeholder="Last Name"/>
                                 </div>
                                 <div className="mb-2">
-                                    <input type="text" className="form-control" placeholder="Name"/>
+                                    <input type="text" className="form-control" placeholder="Phone Number"/>
                                 </div>
                                 <div className="mb-2">
-                                    <input type="text" className="form-control" placeholder="Name"/>
+                                    <input type="text" className="form-control" placeholder="Email Address"/>
                                 </div>
                                 <div className="mb-2">
-                                    <input type="text" className="form-control" placeholder="Name"/>
+                                    <select className= "form-control">
+                                        <option value="">Select Group</option>
+                                    </select>
                                 </div>
                                 <div className="mb-2">
-                                    <input type="text" className="form-control" placeholder="Name"/>
-                                </div>
-                                <div className="mb-2">
-                                    <input type="text" className="form-control" placeholder="Name"/>
-                                </div>
-                                <div className="mb-2">
-                                    <input type="text" className="form-control" placeholder="Name"/>
-                                </div>
-                                <div className="mb-2">
-                                    <input type="text" className="form-control" placeholder="Name"/>
+                                    <input type="submit" className="btn btn-success" value="Create"/>
+                                    <Link to={'/addresses/list'}className= "btn btn-dark ms-2">Exit</Link>
                                 </div>
                             </form>
                         </div>
