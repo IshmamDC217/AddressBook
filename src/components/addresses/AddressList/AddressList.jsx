@@ -2,6 +2,13 @@ import React from 'react';
 import{Link} from 'react-router-dom';
 
 let AddressList = () => {
+
+    let [state,setState] =  useState(initialState:{
+        loading: false,
+        contacts: [],
+        errorMessage: ''
+    })
+
     return (
         <React.Fragment>
             <section className="address-search p-3">
