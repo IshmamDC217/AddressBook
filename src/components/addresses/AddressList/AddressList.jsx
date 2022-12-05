@@ -3,11 +3,11 @@ import{Link} from 'react-router-dom';
 
 let AddressList = () => {
 
-    let [state,setState] =  useState(initialState:{
+    let [state,setState] =  useState({
         loading: false,
         contacts: [],
         errorMessage: ''
-    })
+    });
 
     return (
         <React.Fragment>
