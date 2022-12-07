@@ -47,7 +47,7 @@ let AddressList = () => {
                     <div className="grid">
                         <div className="row">
                             <div className="col">
-                                <p className="h3 fw-bold">Address Manager
+                                <p className="h3 text-white fw-bold">Address Manager
                                     <Link to={'/addresses/add'} className="btn btn-success ms-2">
                                         <i className="fa fa-plus me-2" />
                                         New</Link>

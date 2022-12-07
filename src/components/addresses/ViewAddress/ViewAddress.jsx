@@ -8,7 +8,7 @@ let ViewAddress = () => {
                 <div className= "container">
                     <div className= "row">
                         <div className="col">
-                            <p className= "h4 text- fw-dark fst-italic">View Address</p>
+                            <p className= "h4 text-white fw-dark fst-italic">View Address</p>
                             <p className= "fst-italic">Address Details</p>
                         </div>
                     </div>
@@ -18,7 +18,8 @@ let ViewAddress = () => {
                 <div className= "container">
                     <div className= "row">
                         <div className="col md-4">
-                            <img src="https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png" alt="" className="address-img"/>
+                            <img src="https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png" alt=""/>
+                            {/* <img src="https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png" alt="" className="address-img"/> */}
                         </div>
                         <div className="col md-8">
                         <ul className="list-group">
