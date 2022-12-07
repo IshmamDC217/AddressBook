@@ -1,4 +1,4 @@
-# Address Book App
+# Address Book Web App
 
 ### Instructions:
 

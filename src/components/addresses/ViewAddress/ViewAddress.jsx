@@ -8,7 +8,7 @@ let ViewAddress = () => {
                 <div className= "container">
                     <div className= "row">
                         <div className="col">
-                            <p className= "h3 text-dark fw-bold fst-italic ">View Address</p>
+                            <p className= "h4 text- fw-dark fst-italic">View Address</p>
                             <p className= "fst-italic">Address Details</p>
                         </div>
                     </div>

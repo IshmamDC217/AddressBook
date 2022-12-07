@@ -4,33 +4,44 @@
             "first_name": "David",
             "last_name": "Platt",
             "phone": "01913478234",
-            "email": "david.platt@corrie.co.uk"
-            },
-            {
+            "email": "david.platt@corrie.co.uk",
+            "image": "https://cdn-icons-png.flaticon.com/512/4140/4140048.png",
+            "groupID": "1"
+        },
+        {
             "first_name": "Jason",
             "last_name": "Grimshaw",
             "phone": "01913478123",
-            "email": "jason.grimshaw@corrie.co.uk"
-            },
-            {
+            "email": "jason.grimshaw@corrie.co.uk",
+            "image": "https://cdn-icons-png.flaticon.com/512/4139/4139970.png",
+            "groupID": "3"
+        },
+        {
             "first_name": "Ken",
             "last_name": "Barlow",
             "phone": "019134784929",
-            "email": "ken.barlow@corrie.co.uk"
-            },
-            {
+            "email": "ken.barlow@corrie.co.uk",
+            "image": "https://cdn-icons-png.flaticon.com/512/4139/4139993.png",
+            "groupID": "2"
+        },
+        {
             "first_name": "Rita",
             "last_name": "Sullivan",
             "phone": "01913478555",
-            "email": "rita.sullivan@corrie.co.uk"
-            },
-            {
+            "email": "rita.sullivan@corrie.co.uk",
+            "image": "https://cdn-icons-png.flaticon.com/512/4139/4139988.png",
+            "groupID": "1"
+        },
+        {
             "first_name": "Steve",
             "last_name": "McDonald",
             "phone": "01913478555",
-            "email": "steve.mcdonald@corrie.co.uk"
-            }
+            "email": "steve.mcdonald@corrie.co.uk",
+            "image": "https://cdn-icons-png.flaticon.com/512/4323/4323013.png",
+            "groupID": "5"
+        }
     ],
+
     "groups": [
         {
             "id": "1",

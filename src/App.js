@@ -6,6 +6,7 @@ import AddressList from './components/addresses/AddressList/AddressList';
 import AddAddress from './components/addresses/AddAddress/AddAddress';
 import ViewAddress from './components/addresses/ViewAddress/ViewAddress';
 import EditAddress from './components/addresses/EditAddress/EditAddress';
+import Loadingspin from "./components/Loadingspin/Loadingspin";
 
 let App = () => {
   return (
