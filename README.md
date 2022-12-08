@@ -13,7 +13,7 @@ cd AddressBook
 npm install
 
 # Install backend dependencies
-cd backend
+cd server
 npm install
 ```
 
