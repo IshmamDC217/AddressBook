@@ -6,9 +6,14 @@ import Loadingspin from '../../Loadingspin/Loadingspin';
 
 let AddressList = () => {
 
+    let [query, setQuery] = useState( {
+        text : ''
+    });
+
     const [state, setState] = useState({
         loading: false,
         addresses: [],
+        filteredAddresses : [],
         errorMessage: ''
     });
 
@@ -21,7 +26,8 @@ let AddressList = () => {
                 setState({
                     ...state,
                     loading: false,
-                    addresses: response.data
+                    addresses: response.data,
+                    filteredAddresses: response.data
                 })
             }
             catch(error) {
@@ -35,9 +41,48 @@ let AddressList = () => {
         fetchData();
     }, []);
 
+    let clickDelete = (addressId) => {
+        async function fetchData() {
+        try {
+            let response = await AddressService.deleteAddress(addressId);
+            if(response){
+                setState({ ...state, loading: true });
+                const response = await AddressService.getALLAddresses();
+                setState({
+                    ...state,
+                    loading: false,
+                    address: response.data,
+                    filteredAddresses: response.data
 
+            })
+        }
+            
+        } 
+        catch (error) {
+            setState({
+                ...state,
+                loading: false,
+                errorMessage: error.message
+            });
+        }
+    }
+        fetchData();
 
-    let { loading, addresses, errorMessage } = state;
+    }
+
+    let searchAddresses = (event) => {
+        setQuery({...query, text:event.target.value})
+        let theAddresses = state.addresses.filter(address => {
+            return address.first_name.toLowerCase().includes(event.target.value.toLowerCase())
+        });
+        console.log(theAddresses)
+        setState({
+            ...state,
+            filteredAddresses: theAddresses
+        })
+    };
+
+    let { loading, addresses, filteredAddresses, errorMessage } = state;
 
     return (
         <React.Fragment>
@@ -61,7 +106,11 @@ let AddressList = () => {
                                 <form className="row">
                                     <div className="col">
                                         <div className="mb-2">
-                                            <input type="text" className="form-control" placeholder="Search Name(s)" />
+                                            <input 
+                                                name="text"
+                                                value={query.text}
+                                                onChange={searchAddresses}
+                                                type="text" className="form-control" placeholder="Search Name(s)" />
                                         </div>
                                     </div>
                                     <div className="col">
@@ -81,8 +130,8 @@ let AddressList = () => {
                         <div className="container">
                             <div className="row">
                                 {
-                                    addresses.length > 0 &&
-                                    addresses.map(address => {
+                                    filteredAddresses.length > 0 &&
+                                    filteredAddresses.map(address => {
                                         return (
                                             <div className="col-md-6" key={address.id}>
                                                 <div className="card my-2">
@@ -114,7 +163,7 @@ let AddressList = () => {
                                                                 <Link to={`/addresses/edit/${address.id}`} className="btn btn-warning my-1">
                                                                     <i className="fa fa-pen" />
                                                                 </Link>
-                                                                <button className="btn btn-danger my-1">
+                                                                <button className="btn btn-danger my-1" onClick={() => clickDelete(address.id)}>
                                                                     <i className="fa fa-trash" />
                                                                 </button>
                                                             </div>

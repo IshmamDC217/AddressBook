@@ -75,7 +75,7 @@ let AddAddress = () => {
     let { loading, address, groups, errorMessage } = state;
     return (
         <React.Fragment>
-            <pre>{JSON.stringify(state.address)}</pre>
+            {/* <pre>{JSON.stringify(state.address)}</pre> */}
             <section className= "add-address p-3">
                 <div className= "container">
                     <div className= "row">

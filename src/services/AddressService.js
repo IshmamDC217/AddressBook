@@ -15,6 +15,12 @@ export class AddressService {
         return axios.post(dataURL, address);
     }
 
+    static updateAddress(address, addressId){
+        //console.log(this.serverURL);z
+        let dataURL = `${this.serverURL}/addresses/${addressId}`;
+        return axios.put(dataURL, address);
+    }
+
     static getAddress(addressId){
         let dataURL = `${this.serverURL}/addresses/${addressId}`;
         return axios.get(dataURL);
@@ -29,5 +35,10 @@ export class AddressService {
         let groupID = address.groupID
         let dataURL = `${this.serverURL}/groups/${groupID}`;
         return axios.get(dataURL);
+    }
+
+    static deleteAddress(addressId){
+        let dataURL = `${this.serverURL}/addresses/${addressId}`;
+        return axios.delete(dataURL);
     }
 }
