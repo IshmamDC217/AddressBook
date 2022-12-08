@@ -53,7 +53,7 @@ let AddressList = () => {
                                         New</Link>
 
                                 </p>
-                                <p className="fst-lighter">Search for Addresses</p>
+                                <p className="text-warning fst-italic">Search for Addresses</p>
                             </div>
                         </div>
                         <div className="row">
@@ -108,10 +108,10 @@ let AddressList = () => {
                                                                 </ul>
                                                             </div>
                                                             <div className="col-md-1 d-flex flex-column align-items-center">
-                                                                <Link to={'/addresses/view/addressID'} className="btn btn-primary my-1">
+                                                                <Link to={`/addresses/view/${address.id}`} className="btn btn-primary my-1">
                                                                     <i className="fa fa-eye" />
                                                                 </Link>
-                                                                <Link to={'/addresses/edit/addressID'} className="btn btn-warning my-1">
+                                                                <Link to={`/addresses/edit/${address.id}`} className="btn btn-warning my-1">
                                                                     <i className="fa fa-pen" />
                                                                 </Link>
                                                                 <button className="btn btn-danger my-1">
