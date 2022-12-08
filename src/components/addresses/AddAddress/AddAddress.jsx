@@ -15,6 +15,7 @@ let AddAddress = () => {
             last_name : '',
             phone : '',
             email : '',
+            image : '',
             groupID : ''
 
         },
@@ -117,6 +118,14 @@ let AddAddress = () => {
                                         value={address.email}
                                         onChange = {updateInput}
                                         type="text" className="form-control" placeholder="Email Address"/>
+                                </div>
+                                <div className="mb-2">
+                                    <input 
+                                        required={true} 
+                                        name="image"
+                                        value={address.image}
+                                        onChange = {updateInput}
+                                        type="text" className="form-control" placeholder="Add Image from URL"/>
                                 </div>
                                 <div className="mb-2">
                                     <select 
