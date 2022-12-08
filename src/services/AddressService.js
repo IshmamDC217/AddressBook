@@ -9,6 +9,12 @@ export class AddressService {
         return axios.get(dataURL);
     }
 
+    static createContact(address){
+        //console.log(this.serverURL);
+        let dataURL = `${this.serverURL}/addresses`;
+        return axios.post(dataURL, address);
+    }
+
     static getAddress(addressId){
         let dataURL = `${this.serverURL}/addresses/${addressId}`;
         return axios.get(dataURL);
