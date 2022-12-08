@@ -33,7 +33,6 @@ This will run the backend server at localhost:9000
 2. Open a separate terminal to start the client:
 
 ```bash
-cd react-contact-manager
 npm start
 ```
 
