@@ -1,24 +1,42 @@
-# Address Book Web App
+# Address Book Web app
 
-### Instructions:
+## Introduction
+This a basic CRUD React Address Book web application made for a technical test given to me by a company based in the UK. The task was to build an address book web application, with all data stored in a JSON flat file. The objectives were to be able to list, view, add, edit and delete records, all of which I have obtained successfully. The web app uses json as the rest backend server.
 
-In the project directory, you can run:
+##  How to install
 
-### `npm start`
+```bash
+git clone https://github.com/IshmamDC217/AddressBook.git
+cd AddressBook
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Install frontend dependencies
+npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Install backend dependencies
+cd backend
+npm install
+```
 
-### `npm test`
+## How to run
+Ensure you have NodeJS and npm installed in your system.
 
-Launches the test runner in the interactive watch mode.\
+### Start the backend server
+1. Start the backend server first:
 
-### `npm run build`
+```bash
+cd react-contact-manager/server
+npm start
+```
+This will run the backend server at localhost:9000
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Start the client
+2. Open a separate terminal to start the client:
 
-The build is minified and the filenames include the hashes.
+```bash
+cd react-contact-manager
+npm start
+```
+
+3. If/When it runs, the site can be opened directly using netlify as my web app has been successfully deployed over there. The link has been attached bellow:
+https://symphonious-daifuku-db4ee0.netlify.app 
+However, best results of my web app can be achieved by running it locally.
