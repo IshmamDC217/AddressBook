@@ -24,7 +24,7 @@ Ensure you have NodeJS and npm installed in your system.
 1. Start the backend server first:
 
 ```bash
-cd react-contact-manager/server
+cd server
 npm start
 ```
 This will run the backend server at localhost:9000
