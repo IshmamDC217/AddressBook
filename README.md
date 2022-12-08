@@ -35,7 +35,3 @@ This will run the backend server at localhost:9000
 ```bash
 npm start
 ```
-
-3. If/When it runs, the site can be opened directly using netlify as my web app has been successfully deployed over there. The link has been attached here:
-https://symphonious-daifuku-db4ee0.netlify.app 
-However, best results of my web app can be achieved by running it locally.
