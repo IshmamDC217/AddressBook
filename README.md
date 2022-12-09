@@ -7,6 +7,7 @@ This a basic CRUD React Address Book web application made for a technical test g
 
 ```bash
 git clone https://github.com/IshmamDC217/AddressBook.git
+then
 cd AddressBook
 
 # Install frontend dependencies
