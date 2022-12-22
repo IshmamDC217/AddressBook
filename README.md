@@ -22,7 +22,7 @@ npm install
 Ensure you have NodeJS and npm installed in your system.
 
 ### Start the backend server
-1. Start the backend server first:
+1. Start the backend server first (localhost:9000):
 
 ```bash
 cd server
@@ -31,8 +31,9 @@ npm start
 This will run the backend server at localhost:9000
 
 ### Start the client
-2. Open a separate terminal to start the client:
+2. Open a separate terminal to start the client (localhost:3000):
 
 ```bash
 npm start
 ```
+This will run in localhost:3000
