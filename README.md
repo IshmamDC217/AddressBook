@@ -1,7 +1,7 @@
 # Address Book
 
 ## Introduction
-This a CRUD React Address Book web application made for a technical test given to me by a company based in the UK. The task was to build an address book web application, with all data stored in a JSON flat file. The objectives were to be able to list, view, add, edit and delete records, all of which I have obtained successfully. The web app uses json as the rest backend server.
+This CRUD app is an address book which allows users to view, add, edit and delete contact information. It was developed using JavaScript React, and utilizes a JSON server as the backend server. JSON Server is an easy-to-use module that allows you to quickly and conveniently mock or fake a REST API for development and testing purposes. It allows you to quickly create a backend server that can be used to simulate responses to requests, allowing you to develop and test your code without having to connect to a live server. This makes it especially useful for development, testing, and debugging applications. The user interface is designed to be user-friendly and intuitive, making it easy to find and modify contacts. Furthermore, the app has been designed to be mobile-responsive, so it can be viewed and used on any device. All in all, this app provides an efficient and easy way of managing contact information.
 
 ## Sample
 <picture> <img align="centre" src="https://media.giphy.com/media/czClIkLFxQvTCDH9Z8/giphy.gif" width = 550px></picture>
