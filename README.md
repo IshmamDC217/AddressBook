@@ -23,7 +23,7 @@ npm install
 ```
 
 ## How to run
-Ensure that you have NodeJS and npm installed in your system.
+Be sure to have NodeJS and npm installed in your system.
 
 ### Start the backend server
 1. Start the backend server first (localhost:9000):
